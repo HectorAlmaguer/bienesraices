@@ -30,3 +30,10 @@ a{
     font-weight: bolder;
     color: aliceblue;
 }
+.title{
+    background-color: goldenrod;
+    color: aliceblue;
+}
+.navbar{
+    background-color:#00AAE4;
+}
