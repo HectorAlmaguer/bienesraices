@@ -10,13 +10,18 @@ function enviar(){
         cancelButtonColor: '#d33',
       }).then((result) => {
         if (result.value) {
+            Swal.fire(
+                'Tus datos se han enviado',
+                'Un asesor se pondra en contacto lo mas pronto posible',
+                'success'
+              )
         document.formulario_registro.submit();
         }
         return false;
       })
     }
 function validarEmail() {
-        var email = document.getElementById('username');
+        var email = document.getElementById('inputEmail4');
         if (!(/\S+@\S+\.\S+/.test(email))){
             return false;
         }
